@@ -53,7 +53,7 @@ export function Header() {
           aria-label={`Theme: ${cur.label}`} title={cur.label}>
           {cur.icon}
         </button>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+        <a href="https://github.com/sajjadth" target="_blank" rel="noopener noreferrer"
           className="q-btn q-btn-icon q-btn-ghost" aria-label="GitHub" title="GitHub"
           style={{ textDecoration: 'none' }}>
           <Github size={15} />
