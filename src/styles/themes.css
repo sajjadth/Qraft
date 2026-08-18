@@ -1,0 +1,86 @@
+/* ===== Dark (default) ===== */
+:root, [data-theme="dark"] {
+  --bg: #09090B;
+  --bg-raised: #111113;
+  --bg-surface: #18181B;
+  --bg-hover: #1F1F23;
+  --bg-active: #27272A;
+
+  --text-primary: #FAFAFA;
+  --text-secondary: #A1A1AA;
+  --text-tertiary: #52525B;
+  --text-inverse: #09090B;
+
+  --border: #27272A;
+  --border-subtle: #1C1C1F;
+  --border-focus: #A3E635;
+
+  --accent: #A3E635;
+  --accent-hover: #BEF264;
+  --accent-muted: rgba(163, 230, 53, 0.1);
+  --accent-text: #09090B;
+
+  --danger: #F87171;
+  --danger-muted: rgba(248, 113, 113, 0.08);
+  --warn: #FBBF24;
+
+  --input-bg: #0F0F12;
+  --input-border: #27272A;
+  --ring: rgba(163, 230, 53, 0.35);
+
+  --glow: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(163, 230, 53, 0.04) 0%, transparent 70%);
+  color-scheme: dark;
+}
+
+/* ===== Light ===== */
+[data-theme="light"] {
+  --bg: #FAFAFA;
+  --bg-raised: #FFFFFF;
+  --bg-surface: #FFFFFF;
+  --bg-hover: #F4F4F5;
+  --bg-active: #E4E4E7;
+
+  --text-primary: #09090B;
+  --text-secondary: #52525B;
+  --text-tertiary: #A1A1AA;
+  --text-inverse: #FAFAFA;
+
+  --border: #E4E4E7;
+  --border-subtle: #F4F4F5;
+  --border-focus: #65A30D;
+
+  --accent: #65A30D;
+  --accent-hover: #4D7C0F;
+  --accent-muted: rgba(101, 163, 13, 0.08);
+  --accent-text: #FFFFFF;
+
+  --danger: #DC2626;
+  --danger-muted: rgba(220, 38, 38, 0.06);
+  --warn: #D97706;
+
+  --input-bg: #FFFFFF;
+  --input-border: #D4D4D8;
+  --ring: rgba(101, 163, 13, 0.3);
+
+  --glow: none;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-theme="system"] {
+    --bg: #09090B; --bg-raised: #111113; --bg-surface: #18181B;
+    --bg-hover: #1F1F23; --bg-active: #27272A;
+    --text-primary: #FAFAFA; --text-secondary: #A1A1AA; --text-tertiary: #52525B;
+    --text-inverse: #09090B; --border: #27272A; --border-subtle: #1C1C1F;
+    --border-focus: #A3E635; --accent: #A3E635; --accent-hover: #BEF264;
+    --accent-muted: rgba(163, 230, 53, 0.1); --accent-text: #09090B;
+    --danger: #F87171; --danger-muted: rgba(248, 113, 113, 0.08);
+    --warn: #FBBF24; --input-bg: #0F0F12; --input-border: #27272A;
+    --ring: rgba(163, 230, 53, 0.35);
+    --glow: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(163, 230, 53, 0.04) 0%, transparent 70%);
+    color-scheme: dark;
+  }
+}
+@media (prefers-color-scheme: light) {
+  [data-theme="system"] { color-scheme: light; }
+}
